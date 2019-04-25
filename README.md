@@ -43,3 +43,5 @@ Traverse into the root directory through command tool (git bash / terminal) of t
 ```
 php index.php count=10
 ```
+
+## Directory Structure
