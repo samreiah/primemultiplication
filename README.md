@@ -45,3 +45,15 @@ php index.php count=10
 ```
 
 ## Directory Structure
+
+    .
+    ├── tests                    
+    │   └── PrimeTest.php       # Testcases with phpunit
+    ├── utils                   
+    │   └── Prime.php           # All Application logics are in this class 
+    ├── vendor                  # Libraries used ("monolog/monolog", "phpunit/phpunit" and its dependencies)
+    ├── .gitignore              # file to mention the files to be excluded from version control
+    ├── composer.json           # package manager for php
+    ├── composer.lock
+    ├── index.php               # Code Entry file
+    └── README.md
