@@ -20,12 +20,7 @@ if(sizeof($params) == 0) { // there should be params
 
 } else if($params['count'] <= 0) { // should be greater than 0
 
-  throw new InvalidArgumentException("Error: the count of prime numbers should be atleast 1");
-  exit;
-
-} else if (!is_int($params['count'])) { // Should be an integer
-  
-  throw new InvalidArgumentException("Error: the count of prime numbers should be a whole number");
+  throw new InvalidArgumentException("Error: the count of prime numbers should be atleast 1 and it should be a whole number");
   exit;
 
 }
