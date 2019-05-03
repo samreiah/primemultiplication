@@ -6,6 +6,11 @@ class Prime {
 
   }
 
+  /**
+     * return first n prime numbers.
+     *
+     * @return Array
+  */
   public function getFirstNPrimeNumbers($n) {
     
     $primeNumbers = [];  // Array to hold the generated primenumbers
@@ -36,7 +41,11 @@ class Prime {
     return $primeNumbers;
   }
   
-  
+  /**
+     * return cell size .
+     *
+     * @return String
+  */
   public function getcellSize($maxX, $maxY) {
   
     // Get maximum multiplication number
@@ -52,6 +61,11 @@ class Prime {
   
   }
   
+  /**
+     * Multiplies both the prime number arrays and print it as a matrix 
+     *
+     * @return bool
+  */
   public function multiplyAndPrintMatrix($x, $y, $cellSize) {
   
     // Initially print blank space
@@ -83,6 +97,11 @@ class Prime {
   
   }
 
+  /**
+     * check if the number is prime
+     *
+     * @return bool
+  */
   public function isPrime($num) {
 
     if($num == 1)

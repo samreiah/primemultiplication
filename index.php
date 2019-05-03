@@ -4,7 +4,7 @@ require 'utils/Prime.php';
 
 $prime = new Prime();
 
-// Parse Variables
+// Parse Variables from the command line request
 parse_str(implode('&', array_slice($argv, 1)), $_GET);
 $params = $_GET;
 
@@ -25,10 +25,13 @@ if(sizeof($params) == 0) { // there should be params
 
 }
 
+// Get the first n prime numbers and assign it to x and y variables
 $x = $y = $prime->getFirstNPrimeNumbers( (int) $params['count']);
 
+// Identify the cell size (no of digits per cell)
 $cellSize  = $prime->getcellSize($x[sizeof($x) - 1], $y[sizeof($y) - 1]);
 
+// Multiply and print the matrix in the terminal
 $prime->multiplyAndPrintMatrix($x, $y, $cellSize);
 
 
